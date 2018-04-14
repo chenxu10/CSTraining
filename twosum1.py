@@ -12,19 +12,19 @@ class Solution(object):
     def twoSum(self,nums,target):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
-                if target-nums[j]= nums[i]:
+                if target-nums[j]== nums[i]:
                     return [i,j]
 
 # Hash Table I
 class Solution(object):
     def twoSum(self,nums,target):
         dict={}
-         for i,num in enumerate(nums):
+        for i,num in enumerate(nums):
             dict[num]=i
 
-         for i,num in enumerate(nums):
-             if target-num in dict and dict[target-num]!=i:
-                 return [i,dict[target-num]]
+        for i,num in enumerate(nums):
+            if target-num in dict and dict[target-num]!=i:
+                return [i,dict[target-num]]
 
 
 # Hash Table II
